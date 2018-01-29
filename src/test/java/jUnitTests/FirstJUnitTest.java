@@ -1,5 +1,6 @@
 package jUnitTests;
 
+import com.jsystems.User;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -52,7 +53,14 @@ public class FirstJUnitTest extends ConfigJUnit {
             assertThat(integery, hasItem(6));
         }
 
+User naszUser = new User();
 
+@Test
+public void piatyTest(){
+            assertTrue(naszUser.countAge(20)==120);
+            assertFalse(naszUser.countAge(15)==120);
+
+}
 
 
     @Test
