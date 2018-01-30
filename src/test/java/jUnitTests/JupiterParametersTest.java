@@ -9,22 +9,22 @@ import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class JupiterParametersTest  {
+public class JupiterParametersTest {
 
 
-        @DisplayName("===Junit+++")
-        @ParameterizedTest
-        @CsvSource({"Hello, 5", "JUnit 5, 7", "'Hello, JUnit 5', 15"})
+    @DisplayName("===Junit+++")
+    @ParameterizedTest
+    @CsvSource({"Hello, 5", "JUnit 5, 7", "'Hello, JUnit 5', 15"})
 
-        public void shouldArraysCompare(String tekst, Integer integer){
+    public void shouldArraysCompare(String tekst, Integer integer) {
 
-            List<String> listaStringow = Arrays.asList("Hello", "JUnit 5", "Hello, JUnit 5");
-            List<Integer> listaIntigerow = Arrays.asList(5,7,15);
+        List<String> listaStringow = Arrays.asList("Hello", "JUnit 5", "Hello, JUnit 5");
+        List<Integer> listaIntigerow = Arrays.asList(5, 7, 15);
 
-            assertTrue(listaStringow.contains(tekst));
-            assertTrue(listaIntigerow.contains(integer));
-
-        }
+        assertTrue(listaStringow.contains(tekst));
+        assertTrue(listaIntigerow.contains(integer));
 
     }
+
+}
 
